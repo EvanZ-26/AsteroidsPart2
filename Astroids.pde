@@ -18,6 +18,7 @@ public void setup() {
 
 
 void draw() {
+  background(0, 0, 0);
   bob.move();
   bob.show();
 
@@ -36,12 +37,14 @@ public void keyPressed() {
   if (key == 'h') {
     bob.hyperspace();
   }
-
-  if (key == 'c') {
+  if (key == 'w') {
     bob.accelerate(-5);
   }
   if (key == 'a') {
     bob.turn(10);
+  }
+  if (key == 's') {
+    bob.accelerate(10);
   }
   if (key == 'd') {
     bob.turn(-10);
